@@ -1,0 +1,29 @@
+.background-graph {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #080808;  
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none; 
+  }
+  
+  .bars {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    opacity: 0.15;        
+  }
+  
+  .bar {
+    flex: 1;
+    margin: 0 2px;
+    background: #00d4ff;  
+    animation: scaleYAnim 1.8s ease-in-out infinite alternate;
+  }
+  
+  @keyframes scaleYAnim {
+    0%   { transform: scaleY(0.3); }
+    100% { transform: scaleY(1.0); }
+  }
